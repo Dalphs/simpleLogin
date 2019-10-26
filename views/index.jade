@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Login to website
+  form(action='/loginY', method='post')
+    .vertical
+      input(type='text', name='userName')
+      input(type='password', name='password')
+      button(type='submit') Login
